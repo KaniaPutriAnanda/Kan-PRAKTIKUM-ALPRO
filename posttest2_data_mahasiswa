@@ -1,0 +1,37 @@
+print("==================")
+print  ("DATA MAHASISWA")
+print("==================")
+
+nama = str(input("masukkan nama :"))
+nim = int(input("masukkan nim :"))
+fakultas = str(input("masukkan fakultas :"))
+prodi = str(input("masukkan prodi :"))
+uts = float(input("masukkan nilai uts :"))
+uas = float(input("masukkan nilai uas :"))
+tugas = float(input("masukkan nilai tugas :"))
+jumlah = ()
+
+data = "Y"
+while data == "Y":
+    pilih = str(input("yang ingin di cek?:"))
+    List = [nama,nim,uts,uas,tugas, jumlah]
+    if pilih == "nama":
+        print("nama anda:",nama)
+    elif pilih == "nim":
+        print("nim anda",nim)
+    elif pilih == "fakultas":
+        print("fakultas anda",fakultas)
+    elif pilih == "prodi":
+        print("prodi anda",prodi)
+    elif pilih == "uts":
+        print("hasil nilai uts",uts)
+    elif pilih == "uas":
+        print("hasil nilai uas",uas)
+    elif pilih == "tugas":
+        print("hasil nilai tugas",tugas)
+    elif pilih == "jumlah":
+        print("hasil nilai akhir",(uts+uas+tugas)/3)
+    else :
+        print("Tidak ada inputan")
+    data = input("ingin melihat data lagi? y/n :")
+print("keluar")

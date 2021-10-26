@@ -1,0 +1,23 @@
+menu = "Y"
+while menu == "Y" :
+    print ("KONVERSI SUHU")
+    print ("a. Fahrenheit ke Celsius")
+    print ("b. Kelvin ke Celsius")
+    print ("c. Reamur ke Celsius")
+    menu_konversi = str(input("Silahkan pilih suhu yang ingin di konversi? "))
+    if menu_konversi == "a" :
+        fahrenheit = int(input("Masukan suhu : "))
+        rumus = ((fahrenheit - 32) * 5 / 9)
+        print ("Fahrenheit ke Celsius = ", rumus)
+    elif menu_konversi == "b" :
+        kelvin = int(input("Masukan suhu : "))
+        rumus = (kelvin - 273)
+        print ("Kelvin ke Celsius = ", rumus)
+    elif menu_konversi == "c" :
+        reamur = int(input("Masukan suhu : "))
+        rumus = (5 / 4 * reamur)
+        print ("Reamur ke Celsius = ", rumus)
+    else :
+        print ("pilihan tidak ada pada menu konversi")
+    menu = input("Apakah ingin mengkonversi lagi? Y/N : ")
+print("Terima Kasih")
